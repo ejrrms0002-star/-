@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈 | 위드 아카데미</title>
+    <title>청년 현실 | 위드 아카데미</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -297,63 +297,91 @@
         </div>
     </nav>
 <main class="page-main">
-    <header class="relative bg-brand-green min-h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="A_fresh_spring-themed_homepage_background_image_sy-1770791023434.jpg" alt="Academy Background" class="w-full h-full object-cover opacity-50 mix-blend-overlay">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#053b28]/90 via-[#053b28]/70 to-[#053b28]/60"></div>
-        </div>
+    <section id="news" class="py-20 md:py-24 bg-[#082017] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#cfaa56 1px, transparent 1px); background-size: 30px 30px;"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+    		<div class="mb-6 md:mb-0 text-left">
+        	<span class="text-[var(--brand-gold)] font-bold tracking-widest uppercase text-sm">Reality Check</span>
+        	<h2 class="text-3xl md:text-4xl font-bold mt-2 leading-tight">오늘의 부산 청년,<br>우리가 마주한 현실</h2>
+    		</div>
+    		<p class="text-gray-400 text-sm md:text-right max-w-md">
+        화려한 광안대교 불빛 뒤에 가려진<br>부산 2030 세대의 진짜 고민들을 마주합니다.
+    		</p>
+	  </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center w-full">
-            <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0 pt-20 md:pt-0">
-                <div class="inline-block px-4 py-1 mb-6 border border-[var(--brand-gold)]/30 rounded-full bg-[#032b1d]/50 backdrop-blur-sm">
-                    <span class="text-[var(--brand-gold)] text-xs sm:text-sm font-semibold tracking-wider">BUSAN 2030 YOUTH CAMPUS</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="https://www.ntoday.co.kr/news/articleView.html?idxno=125459" target="_blank" rel="noopener noreferrer" class="block group">
+                <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[var(--brand-gold)] transition-colors group cursor-pointer">
+                    <div class="h-40 overflow-hidden relative">
+                        <img src="news1.jpg" alt="부산역 떠나는 청년" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">News</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs mb-2">투데이신문 | 2026.02.20</p>
+                        <h3 class="text-lg font-bold leading-snug mb-3 group-hover:text-[var(--brand-gold)] transition-colors">‘쉬었음’ 청년 70만 시대...<br>고착화 막을 청년정책 시급</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3">20대에 이어 30대 ‘쉬었음’ 인구가 사상 최고치를 기록하면서 고용시장의 허리로 불리는 청년층의 동력이 크게 떨어졌다는 경고음이 커지고 있다.</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://www.joongang.co.kr/article/25392047" target="_blank" rel="noopener noreferrer" class="block group">
+                <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[var(--brand-gold)] transition-colors group cursor-pointer">
+                    <div class="h-40 overflow-hidden relative">
+                        <img src="news2.jpg" alt="취업 고민" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute top-3 left-3 bg-[#053b28] text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Focus</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs mb-2">중앙일보 | 2025.12.23</p>
+                        <h3 class="text-lg font-bold leading-snug mb-3 group-hover:text-[var(--brand-gold)] transition-colors">가상세계로 도피하는 청년<br>[관계빈곤의 시대]</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3">관계 빈곤에 빠진 청년은 AI·게임·소셜미디어에서 새로운 관계를 찾는다. 현실의 인간관계 피로감을 피해 ‘안전한 가상관계’로 도피한다.</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://www.busan.com/view/busan/view.php?code=2025102910380635447" target="_blank" rel="noopener noreferrer" class="block group">
+                <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[var(--brand-gold)] transition-colors group cursor-pointer">
+                    <div class="h-40 overflow-hidden relative">
+                        <img src="news3.png" alt="스터디룸" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs mb-2">부산일보 | 2025.10.29</p>
+                        <h3 class="text-lg font-bold leading-snug mb-3 group-hover:text-[var(--brand-gold)] transition-colors">진로 불안에 절반은<br>“번아웃 경험”</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3">치열한 스펙 경쟁과 좁아진 취업 문턱 속에서 부산 지역 청년들의 심리적 소진(Burnout) 호소가 늘어나고 있다.</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://www.mdilbo.com/detail/AVkixT/752311" target="_blank" rel="noopener noreferrer" class="block group">
+                <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[var(--brand-gold)] transition-colors group cursor-pointer">
+                    <div class="h-40 overflow-hidden relative">
+                        <img src="news4.jpg" alt="텅 빈 사무실" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs mb-2">무등일보 | 2026.01.20</p>
+                        <h3 class="text-lg font-bold leading-snug mb-3 group-hover:text-[var(--brand-gold)] transition-colors">취업을 위한 삶,<br>삶을 위한 취업</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3">거창한 고민까지 가지 않더라도, 우리 스스로의 삶에 대한 고민, 그러니까 취업 이후의 삶에 대한 고민도 잘 보이지 않는다.</p>
+                    </div>
+                </div>
+              </a>  
+            </div>
+          
+            <div class="mt-16 text-center">
+                <div class="inline-block relative">
+                    <p class="text-xl md:text-3xl font-bold text-white mb-8 leading-relaxed animate-typing-loop">
+                        "당신은 <span class="text-[var(--brand-gold)]">어떤 '나'</span>를 그려가고 있나요?"
+                    </p>
                 </div>
                 
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg tracking-tight">
-                    <div class="typing-container">
-                        <span class="typing-text pr-2">BUSAN</span>
+                <div class="w-px h-12 bg-gradient-to-b from-[var(--brand-gold)] to-transparent mx-auto mb-8"></div>
+                
+                <div class="flex justify-center">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[var(--brand-gold)]/20 flex items-center justify-center p-2 bg-[#053b28] shadow-[0_0_30px_rgba(207,170,86,0.15)] animate-soft-pulse">
+                        <img src="logo.png" alt="희망의 나침반" class="w-full h-full object-cover rounded-full opacity-90 border border-white/10">
                     </div>
-                    <div class="font-serif italic mt-2 text-5xl md:text-7xl hero-shine-text block">
-                        WITH
-                    </div>
-                    <div class="font-serif italic -mt-2 text-5xl md:text-7xl hero-shine-text block">
-                        ACADEMY
-                    </div>
-                </h1>
-
-                <p class="text-gray-200 text-base sm:text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed drop-shadow-md">
-                    3월, 새싹이 돋아나듯 당신의 가능성도 움틉니다.<br>
-                    나를 아는 순간, 미래는 스스로 선명해집니다.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-		<a href="about.html" class="inline-block">
-                    <button class="px-8 py-4 bg-brand-gold text-[#053b28] font-bold rounded-lg shadow-lg hover:bg-[#e6c87e] transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1">
-                        과정 알아보기 <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-		</a>
                 </div>
             </div>
-
-            <div class="w-full md:w-1/2 flex justify-center relative">
-    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] compass-float">
-        <div class="absolute inset-0 rounded-full border-2 border-[var(--brand-gold)] opacity-30"></div>
-        <div class="absolute inset-4 rounded-full border border-[var(--brand-gold)] opacity-60"></div>
-
-        <div class="absolute inset-0 flex items-center justify-center z-20 overflow-hidden rounded-full">
-            <video 
-                src="i.mp4" 
-                class="w-full h-full object-cover" 
-                autoplay 
-                muted 
-                loop 
-                playsinline>
-            </video>
         </div>
-    </div>
-</div>
-        </div>
-    </header>
-<section class="bg-white py-16 px-4"><div class="max-w-7xl mx-auto"><p class="text-center text-[#cfaa56] font-bold tracking-widest">EXPLORE WITH ACADEMY</p><h2 class="text-3xl font-bold text-center text-[#053b28] mt-3 mb-10">원하는 메뉴를 선택하세요</h2><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"><a href="about.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">소개 →</div><p class="text-gray-500 text-sm mt-3">위드 아카데미 소개</p></a><a href="news.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">청년 현실 →</div><p class="text-gray-500 text-sm mt-3">부산 청년의 현실</p></a><a href="instructors.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">강사진 →</div><p class="text-gray-500 text-sm mt-3">함께하는 멘토진</p></a><a href="curriculum.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">커리큘럼 →</div><p class="text-gray-500 text-sm mt-3">수강 과정 살펴보기</p></a><a href="gallery.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">갤러리 →</div><p class="text-gray-500 text-sm mt-3">현장 스케치</p></a><a href="history.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">연혁 →</div><p class="text-gray-500 text-sm mt-3">주요 연혁</p></a><a href="reviews.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">후기 →</div><p class="text-gray-500 text-sm mt-3">참여 후기</p></a><a href="contact.html" class="group block bg-[#f8f9fa] rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#cfaa56] p-7 transition-all hover:-translate-y-1"><div class="text-[#053b28] text-xl font-bold group-hover:text-[#a47f2f]">상담 신청 →</div><p class="text-gray-500 text-sm mt-3">상담 신청하기</p></a></div></div></section>
+    </section>
+
+
 </main>
     <footer class="bg-[#031f15] text-gray-400 py-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
