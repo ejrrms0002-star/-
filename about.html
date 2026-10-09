@@ -248,7 +248,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-subpage .y-content-section .border-white\/10,.y-subpage .y-content-section .border-white\/20{border-color:#d9eefa!important}
 .y-subpage .y-content-section a.group>div,.y-subpage .y-content-section .rounded-xl,.y-subpage .y-content-section .rounded-2xl{border-radius:22px!important}
 .y-subpage .y-content-section a.group>div{box-shadow:0 12px 34px #1760a015;border:1px solid #dcedf9!important;background:#fff!important}
-.y-subpage .y-content-section img[src="ythup-logo-full.png?v=all2"]{object-fit:contain}
+.y-subpage .y-content-section img[src="ythup-brand-final-20261009.png"]{object-fit:contain}
 .y-subpage .y-content-section img{max-width:100%}
 .y-subpage .y-content-section [class*="bg-\["],.y-subpage .y-content-section .bg-brand-green{background-color:#eaf7ff!important}
 .y-subpage .y-content-section .bg-white{background:#fff!important}
@@ -259,7 +259,48 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-subpage .y-content-section .shadow-inner,.y-subpage .y-content-section .shadow-xl{box-shadow:0 12px 35px #1f80bd11!important}
 .y-subpage .y-content-section .bg-red-600{background:#e15167!important}
 @media(max-width:650px){.y-section-heading{padding:63px 18px 54px}.y-section-heading p{font-size:14px}.y-subpage>.y-content-section{padding:35px 16px 60px!important}}
-</style></head>
+</style><style id="ythup-unified-logo-20261009">
+.y-logo{width:190px!important;min-width:150px!important;flex-shrink:0!important}
+.y-logo img{display:block!important;width:190px!important;height:74px!important;object-fit:contain!important;object-position:left center!important}
+@media(max-width:1100px){.y-logo{width:155px!important;min-width:140px!important}.y-logo img{width:155px!important;height:62px!important}}
+@media(max-width:580px){.y-logo{width:140px!important;min-width:125px!important}.y-logo img{width:140px!important;height:58px!important}}
+</style>
+<style>
+/* YTH-UP 소개 페이지: 중앙 로고 + 은은한 금빛 프레임 */
+.yth-glow-frame{
+  position:relative; isolation:isolate; display:grid; place-items:center;
+  box-sizing:border-box; width:158px; height:158px; margin:0 auto 32px;
+  border:2px solid #f1e5c9; background:#fff;
+  box-shadow:0 0 13px rgba(227,194,121,.12), inset 0 0 0 1px #fff9ef;
+  animation:yth-frame-glow 3.4s ease-in-out infinite;
+}
+.yth-glow-logo{
+  display:block; position:relative; z-index:1; width:108px; height:108px;
+  max-width:none; margin:0; padding:0; object-fit:contain; object-position:center;
+  transform:none !important; animation:none !important;
+}
+.yth-spark{
+  position:absolute; z-index:2; width:7px; height:7px; pointer-events:none;
+  opacity:0; background:#ffe7ad; border-radius:50%;
+  box-shadow:0 0 6px #ffe7adc4; animation:yth-spark-twinkle 3.6s infinite;
+}
+.yth-spark::before,.yth-spark::after{content:"";position:absolute;background:#f1d59b;left:50%;top:50%;transform:translate(-50%,-50%)}
+.yth-spark::before{width:1px;height:14px}.yth-spark::after{width:14px;height:1px}
+.yth-spark-a{top:4px;right:4px;animation-delay:0s}
+.yth-spark-b{bottom:8px;left:5px;animation-delay:1.2s}
+.yth-spark-c{top:50%;left:-4px;animation-delay:2.4s}
+@keyframes yth-frame-glow{
+  0%,100%{box-shadow:0 0 11px rgba(227,194,121,.10), inset 0 0 0 1px #fff9ef;border-color:#f1e5c9}
+  50%{box-shadow:0 0 22px rgba(227,194,121,.27),0 0 34px rgba(227,194,121,.10),inset 0 0 0 1px #fff7e7;border-color:#e7c98c}
+}
+@keyframes yth-spark-twinkle{
+  0%,12%,60%,100%{opacity:0;transform:scale(.5)}
+  24%,35%{opacity:.9;transform:scale(1)}
+}
+@media(max-width:640px){.yth-glow-frame{width:138px;height:138px;margin-bottom:26px}.yth-glow-logo{width:96px;height:96px}}
+@media(prefers-reduced-motion:reduce){.yth-glow-frame,.yth-spark{animation:none !important}}
+</style>
+</head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
@@ -341,13 +382,16 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
         </div>
     </div>
 
-    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="ythup-logo-full.png?v=all2" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
+    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="ythup-brand-final-20261009.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
 <main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">ABOUT YTH-UP</div><h1>우리는 함께 성장합니다</h1><p>청년의 가능성을 발견하고, 내일을 더 선명하게 그려가는 공간</p></section>
     <section id="about" class="y-content-section py-20 md:py-24 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-12">
-                <div class="w-24 h-24 mx-auto mb-6 animate-soft-pulse flex items-center justify-center">
-                    <img src="ythup-logo-full.png?v=all2" alt="YTH-UP" class="w-full h-full object-contain">
+                <div class="yth-glow-frame" aria-label="YTH-UP 로고">
+                    <span class="yth-spark yth-spark-a" aria-hidden="true"></span>
+                    <span class="yth-spark yth-spark-b" aria-hidden="true"></span>
+                    <span class="yth-spark yth-spark-c" aria-hidden="true"></span>
+                    <img src="ythup-brand-final-20261009.png?v=glow-final-1" alt="YTH-UP" class="yth-glow-logo">
                 </div>
 
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif animate-shine-text">청년의 가능성을 그리는 YTH-UP</h2>
