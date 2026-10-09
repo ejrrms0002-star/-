@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | YTH-UP</title>
+    <title>갤러리 | 위드 아카데미</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -202,7 +202,6 @@ nav a[href="contact.html"] {color:#145f91 !important;border:1px solid #88cde9 !i
 @media(prefers-reduced-motion:reduce){.animate-shine-text,.hero-shine-text,.animate-gradient-text{animation:none !important;}}
 
 </style>
-<link rel="stylesheet" href="ythup-design.css?v=20261009">
 </head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -285,7 +284,60 @@ nav a[href="contact.html"] {color:#145f91 !important;border:1px solid #88cde9 !i
         </div>
     </div>
 
-    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="ythup-logo.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
+    <nav class="fixed w-full z-50 bg-brand-green/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+                    
+                    <img src="logo.png" 
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" 
+                         alt="위드 아카데미 로고" 
+                         class="w-10 h-10 rounded-full object-cover border-2 border-[var(--brand-gold)]">
+                    
+                    <div class="w-10 h-10 rounded-full border-2 border-[var(--brand-gold)] items-center justify-center bg-[#a9def5] shadow-[0_0_10px_rgba(207,170,86,0.3)] group hover:animate-soft-pulse transition-all hidden">
+                        <i data-lucide="compass" class="w-6 h-6 text-[var(--brand-gold)]"></i>
+                    </div>
+                    
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="text-[var(--brand-gold)] text-2xl font-serif italic font-bold tracking-wider drop-shadow-md">WITH</span>
+                        <span class="text-white text-xl font-bold tracking-wide">ACADEMY</span>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">홈</a>
+                    <a href="about.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">소개</a>
+                    <a href="news.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">청년 현실</a>
+                    <a href="instructors.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">강사진</a>
+                    <a href="curriculum.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">커리큘럼</a>
+                    <a href="gallery.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">갤러리</a>
+                    <a href="history.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">연혁</a>
+                    <a href="reviews.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">후기</a>
+                    <a href="contact.html" class="px-5 py-2 rounded-full border border-[var(--brand-gold)] text-[var(--brand-gold)] hover:bg-[var(--brand-gold)] hover:text-[#a9def5] transition-all font-bold text-sm">상담 신청</a>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button class="text-white hover:text-brand-gold p-2 transition-transform duration-200" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="lg:hidden hidden bg-[#a9def5] border-t border-white/10 absolute w-full left-0 top-20 shadow-xl transition-all duration-300 transform -translate-y-4 opacity-0 z-40">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">홈</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">소개</a>
+                <a href="news.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">청년 현실</a>
+                <a href="instructors.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">강사진</a>
+                <a href="curriculum.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">커리큘럼</a>
+                <a href="gallery.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">갤러리</a>
+                <a href="history.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">연혁</a>
+                <a href="reviews.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">후기</a>
+                <a href="contact.html" class="block px-3 py-3 mt-4 text-center text-base font-bold bg-[var(--brand-gold)] text-[#a9def5] hover:bg-[#e5f7ff] rounded-md transition-colors" onclick="toggleMobileMenu()">상담 신청</a>
+            </div>
+        </div>
+    </nav>
 <main class="page-main">
     <section id="gallery" class="py-20 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -415,7 +467,19 @@ nav a[href="contact.html"] {color:#145f91 !important;border:1px solid #88cde9 !i
 
 
 </main>
-    <footer class="y-footer"><div class="y-footer-inner"><div><strong>YTH-UP</strong><p style="margin-top:8px;font-size:13px">청년의 에너지와 가능성을 끌어올리다.</p></div><div style="font-size:13px"><a href="about.html">소개</a>　·　<a href="curriculum.html">커리큘럼</a>　·　<a href="contact.html">상담 신청</a></div></div></footer>
+    <footer class="bg-[#b0dbed] text-gray-400 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-4 md:mb-0">
+                    <img src="logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="위드 아카데미 로고" class="w-8 h-8 rounded-full object-cover border border-[var(--brand-gold)]">
+                    <span class="text-white font-bold text-lg">WITH ACADEMY</span>
+                </div>
+                <div class="text-sm">
+                    <p>&copy; 2024 With Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
     // 1. 초기 아이콘 생성
     if (typeof lucide !== 'undefined') {

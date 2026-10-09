@@ -14,14 +14,14 @@
 
         /* 커스텀 컬러 정의 */
         :root {
-            --brand-green: #1269ce;
-            --brand-gold: #64d5ff;
-            --brand-gold-light: #b5efff;
+            --brand-green: #a9def5;
+            --brand-gold: #c5ebfb;
+            --brand-gold-light: #e5f7ff;
         }
 
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f5fbff;
+            background-color: #fafcff;
             color: #1f2937;
         }
 
@@ -46,7 +46,7 @@
         }
 
         .text-gradient-gold {
-            background: linear-gradient(to right, #64d5ff, #b5efff, #64d5ff);
+            background: linear-gradient(to right, #c5ebfb, #e5f7ff, #c5ebfb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 200% auto;
@@ -60,7 +60,7 @@
         }
         
         .animate-shine-text {
-            background: linear-gradient(to right, #1269ce 30%, #64d5ff 50%, #1269ce 70%);
+            background: linear-gradient(to right, #a9def5 30%, #c5ebfb 50%, #a9def5 70%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -74,7 +74,7 @@
         }
         
         .hero-shine-text {
-            background: linear-gradient(to right, #ffffff 20%, #64d5ff 50%, #ffffff 80%);
+            background: linear-gradient(to right, #ffffff 20%, #c5ebfb 50%, #ffffff 80%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -90,7 +90,7 @@
         }
 
         .animate-gradient-text {
-            background: linear-gradient(to right, #111827, #1269ce, #64d5ff, #1269ce, #111827);
+            background: linear-gradient(to right, #111827, #a9def5, #c5ebfb, #a9def5, #111827);
             background-size: 300% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -160,90 +160,46 @@
             100% { max-width: 0; opacity: 0;}
         }
     </style>
-<style id="yth-up-blue-theme-2026">
-/* YTH-UP / WITH ACADEMY - 2026 BLUE REFRESH
-   기존 HTML의 콘텐츠와 인터랙션은 유지한 채 시각 테마만 변경.
-   각 HTML의 </head> 바로 앞에 <link rel="stylesheet" href="ythup-blue.css?v=2"> 를 추가하세요.
-*/
-:root {
-  --brand-green: #1269ce; /* 기존 변수명 유지: 모든 페이지 호환 */
-  --brand-gold: #64d5ff;
-  --brand-gold-light: #b5efff;
-  --yth-royal: #1269ce;
-  --yth-deep: #0d3678;
-  --yth-navy: #102b58;
-  --yth-sky: #64d5ff;
-  --yth-soft: #eaf8ff;
-  --yth-white: #ffffff;
-}
-html { scroll-behavior: smooth; }
-body { background: #f5fbff !important; color: #213653; }
-/* 1. 공통 버튼·컬러·테두리 */
-.bg-brand-green { background-color: var(--yth-royal) !important; }
-.bg-brand-gold { background-color: var(--yth-sky) !important; }
-.text-brand-gold { color: var(--yth-sky) !important; }
-.border-brand-gold { border-color: var(--yth-sky) !important; }
-[class*="bg-[#053b28]"], [class*="bg-[#032b1d]"], [class*="bg-[#082017]"],
-[class*="bg-[#0a3f28]"], [class*="bg-[#051811]"] { background-color: var(--yth-deep) !important; }
-[class*="bg-[#053b28]/"] { background-color: rgba(13,54,120,.87) !important; }
-[class*="text-[#053b28]"] { color: var(--yth-deep) !important; }
-[class*="border-[#cfaa56]"] { border-color: var(--yth-sky) !important; }
-[class*="bg-[#cfaa56]"] { background-color: var(--yth-sky) !important; }
-[class*="text-[#cfaa56]"] { color: var(--yth-sky) !important; }
-[class*="bg-[#e6c87e]"] { background-color: #b5efff !important; }
-[class*="hover:bg-[#032b1d]"]:hover { background-color: #0b4fa9 !important; }
-/* 2. 헤더: 밝고 투명한 코발트 블루 */
-nav.fixed { background: rgba(12, 67, 145, .93) !important; backdrop-filter: blur(18px); box-shadow: 0 8px 28px rgba(9,57,126,.12); }
-nav a, nav button { transition: color .2s ease, background-color .2s ease, transform .2s ease; }
-nav a:hover { color: #a8ebff !important; }
-nav a[href="contact.html"] { border-color: #b5efff !important; color: #fff !important; background: rgba(255,255,255,.12); }
-nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5efff !important; }
-#mobile-menu { background: #0e438d !important; }
-/* 3. 메인 상단 히어로: 그린 필터 제거하고 코발트/스카이 블루 */
-.page-main > header.bg-brand-green, .page-main > header[class*="bg-brand-green"] {
-  background: linear-gradient(120deg, #0b4faa, #1785dd 56%, #62c8f1) !important;
-}
-.page-main > header img { filter: saturate(1.08) brightness(1.12); }
-.page-main > header [class*="bg-gradient-to-r"][class*="from-[#053b28]"] {
-  background-image: linear-gradient(100deg, rgba(9,49,112,.94), rgba(18,112,205,.78) 58%, rgba(49,173,224,.45)) !important;
-}
-/* 섹션 배경 및 시각적 리듬 */
-.page-main > section { scroll-margin-top: 80px; }
-.page-main section.bg-white, .page-main > section.bg-white { background-color: #fff !important; }
-.page-main [class*="bg-gray-50"], .page-main [class*="bg-slate-50"] { background-color: #f0f9ff !important; }
-/* 4. 인터랙션 영역 */
-.page-main a[class*="rounded"], .page-main button[class*="rounded"] { transition: transform .22s ease, box-shadow .22s ease, background .22s ease; }
-.page-main a[class*="rounded"]:hover, .page-main button[class*="rounded"]:hover { transform: translateY(-2px); }
-.page-main [class*="shadow-xl"] { box-shadow: 0 15px 38px rgba(29,98,173,.11); }
-/* 5. 기존 금색 글자 효과를 블루 계열로 재정의 */
-.text-gradient-gold {
-  background: linear-gradient(95deg,#b7edff,#54c8ff,#e0f8ff) !important;
-  -webkit-background-clip: text !important; background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-.animate-shine-text {
-  background: linear-gradient(90deg,#0f4ea7 25%,#53c6f5 52%,#0f4ea7 75%) !important;
-  background-size: 200% auto !important; -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-.hero-shine-text {
-  background: linear-gradient(90deg,#fff 20%,#99e5ff 50%,#fff 80%) !important;
-  background-size: 200% auto !important; -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-.animate-gradient-text {
-  background: linear-gradient(90deg,#163e83,#0c76dc,#73d5f8,#0c76dc,#163e83) !important;
-  background-size: 300% auto !important; -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-/* 6. 모바일 및 접근성 */
-@media (max-width: 767px) {
- nav.fixed { background: rgba(12,67,145,.97) !important; }
- .page-main > header[class*="bg-brand-green"] { background: linear-gradient(145deg,#0b4fa9,#167dcc) !important; }
-}
-@media (prefers-reduced-motion: reduce) {
- .animate-shine-text, .hero-shine-text, .animate-gradient-text, .compass-float, .animate-soft-pulse { animation: none !important; }
-}
+
+<style id="yth-up-soft-sky-2026">
+/* YTH-UP soft sky theme · integrated in each HTML */
+:root { --brand-green:#a9def5; --brand-gold:#c5ebfb; --brand-gold-light:#e5f7ff; --yth-royal:#a9def5; --yth-deep:#b1e2f7; --yth-sky:#b8e8fb; --yth-soft:#f2faff; }
+html { scroll-behavior:smooth; }
+body { background:#fafcff !important; color:#233e57; }
+.bg-brand-green { background-color:#a9def5 !important; }
+.bg-brand-gold { background-color:#b9e5fb !important; }
+.text-brand-gold { color:#287dad !important; }
+.border-brand-gold { border-color:#77c5e8 !important; }
+/* Light and airy navigation across all sections */
+nav.fixed { background:rgba(239,250,255,.96) !important; border-bottom:1px solid #d1eaf6 !important; backdrop-filter:blur(15px);box-shadow:0 5px 22px rgba(57,128,171,.08); }
+nav a,nav a.text-gray-300,nav .text-white, nav button.text-white,nav span.text-white { color:#214c6b !important; }
+nav .text-\[var\(--brand-gold\)\] { color:#2788ba !important; }
+nav a:hover,nav button:hover { color:#1375b0 !important; }
+nav a[href="contact.html"] {color:#145f91 !important;border:1px solid #88cde9 !important;background:#e0f3fd !important;}
+#mobile-menu { background:#f0faff !important;border-color:#d1eaf6 !important; }
+#mobile-menu a { color:#214c6b !important; }
+#mobile-menu a:hover {background:#def2ff !important;}
+/* gentle pale-sky headers */
+.page-main > header.bg-brand-green,.page-main > header[class*="bg-brand-green"] {background:linear-gradient(128deg,#dff4ff 0%,#a9dbf3 54%,#eaf9ff 100%) !important;}
+.page-main > header [class*="bg-gradient-to-r"] {background-image:linear-gradient(95deg,rgba(224,246,255,.85),rgba(190,231,249,.60),rgba(226,247,255,.42)) !important;}
+.page-main > header img {filter:saturate(.80) brightness(1.09);opacity:.30 !important;}
+.page-main > header h1,.page-main > header h1.text-white,.page-main > header p,.page-main > header p.text-gray-200,.page-main > header .typing-text {color:#163e5a !important;text-shadow:none !important;}
+.page-main > header [class*="bg-[#"],.page-main > header .inline-block.border {border-color:#91cee8 !important;}
+.page-main > header .hero-shine-text {background:linear-gradient(95deg,#1e5781 15%,#3c9fce 48%,#1e5781 85%) !important;background-size:200% auto !important;-webkit-background-clip:text !important;background-clip:text !important;-webkit-text-fill-color:transparent !important;}
+.page-main > header a button,.page-main > header button.bg-brand-gold {background:#fff !important;color:#166b9d !important;border:1px solid #a9dff4;}
+.page-main > section.bg-white,.page-main section.bg-white{background:#fff !important;}
+.page-main [class*="bg-gray-50"],.page-main [class*="bg-slate-50"] {background:#f3fbff !important;}
+.text-gradient-gold {background:linear-gradient(95deg,#2178a7,#62bce5,#2178a7) !important;-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;}
+.animate-shine-text {background:linear-gradient(90deg,#28698f 25%,#64b5dc 50%,#28698f 75%) !important;background-size:200% auto !important;-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;}
+.animate-gradient-text {background:linear-gradient(90deg,#234f70,#529ec7,#8dd1ed,#529ec7,#234f70) !important;background-size:300% auto !important;-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;}
+/* retain contrast on colored panels and CTA, without oversaturated blocks */
+.page-main .bg-brand-green:not(header),footer.bg-brand-green {background:#9dd3ed !important;}
+.page-main .bg-brand-green:not(header) .text-white,footer.bg-brand-green .text-white{color:#153c56 !important;}
+.page-main [class*="shadow-xl"] {box-shadow:0 16px 35px rgba(62,134,174,.09);}
+.page-main a[class*="rounded"],.page-main button[class*="rounded"] {transition:transform .2s,box-shadow .2s;}
+.page-main a[class*="rounded"]:hover,.page-main button[class*="rounded"]:hover {transform:translateY(-2px);}
+@media(max-width:767px){nav.fixed {background:rgba(239,250,255,.98) !important;}.page-main>header.bg-brand-green{background:linear-gradient(145deg,#e7f7ff,#aadbf3) !important;}}
+@media(prefers-reduced-motion:reduce){.animate-shine-text,.hero-shine-text,.animate-gradient-text{animation:none !important;}}
 
 </style>
 </head>
@@ -285,7 +241,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                         </div>
 
                         <div class="mt-8 text-center sm:text-right">
-                            <button type="button" class="inline-flex w-full justify-center rounded-lg bg-[var(--brand-green)] px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-[#0b3f89] sm:w-auto transition-colors" onclick="closeModal()">
+                            <button type="button" class="inline-flex w-full justify-center rounded-lg bg-[var(--brand-green)] px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-[#82c5e8] sm:w-auto transition-colors" onclick="closeModal()">
                                 닫기
                             </button>
                         </div>
@@ -299,7 +255,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
         <div class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeCurriculumModal()"></div>
         <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
-                <div class="relative transform overflow-hidden rounded-2xl bg-[#0b3671] text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg border border-[var(--brand-gold)]">
+                <div class="relative transform overflow-hidden rounded-2xl bg-[#b1dff4] text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg border border-[var(--brand-gold)]">
                     <div class="absolute right-4 top-4 z-20">
                         <button type="button" class="text-gray-400 hover:text-[var(--brand-gold)] transition-colors p-1" onclick="closeCurriculumModal()">
                             <i data-lucide="x" class="w-6 h-6"></i>
@@ -315,13 +271,13 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                         <p class="text-gray-300 text-sm leading-relaxed mb-8 border-l-2 border-[var(--brand-gold)] pl-4" id="curr-modal-desc">
                             상세 설명이 들어갑니다.
                         </p>
-                        <div class="bg-[#137ac9] rounded-xl p-6">
+                        <div class="bg-[#8acded] rounded-xl p-6">
                             <h4 class="text-xs font-bold text-[var(--brand-gold)] uppercase tracking-wider mb-4 border-b border-white/10 pb-2">What you will learn</h4>
                             <ul class="space-y-3 text-sm text-gray-200" id="curr-modal-list"></ul>
                         </div>
                     </div>
-                    <div class="bg-[#092954] px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button" class="inline-flex w-full justify-center rounded-lg bg-[var(--brand-gold)] px-5 py-2.5 text-sm font-bold text-[#1269ce] shadow-sm hover:bg-white transition-colors sm:w-auto" onclick="closeCurriculumModal()">확인</button>
+                    <div class="bg-[#a4d4eb] px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                        <button type="button" class="inline-flex w-full justify-center rounded-lg bg-[var(--brand-gold)] px-5 py-2.5 text-sm font-bold text-[#a9def5] shadow-sm hover:bg-white transition-colors sm:w-auto" onclick="closeCurriculumModal()">확인</button>
                     </div>
                 </div>
             </div>
@@ -338,7 +294,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                          alt="위드 아카데미 로고" 
                          class="w-10 h-10 rounded-full object-cover border-2 border-[var(--brand-gold)]">
                     
-                    <div class="w-10 h-10 rounded-full border-2 border-[var(--brand-gold)] items-center justify-center bg-[#1269ce] shadow-[0_0_10px_rgba(207,170,86,0.3)] group hover:animate-soft-pulse transition-all hidden">
+                    <div class="w-10 h-10 rounded-full border-2 border-[var(--brand-gold)] items-center justify-center bg-[#a9def5] shadow-[0_0_10px_rgba(207,170,86,0.3)] group hover:animate-soft-pulse transition-all hidden">
                         <i data-lucide="compass" class="w-6 h-6 text-[var(--brand-gold)]"></i>
                     </div>
                     
@@ -357,7 +313,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                     <a href="gallery.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">갤러리</a>
                     <a href="history.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">연혁</a>
                     <a href="reviews.html" class="text-gray-300 hover:text-brand-gold transition-colors font-medium text-sm">후기</a>
-                    <a href="contact.html" class="px-5 py-2 rounded-full border border-[var(--brand-gold)] text-[var(--brand-gold)] hover:bg-[var(--brand-gold)] hover:text-[#1269ce] transition-all font-bold text-sm">상담 신청</a>
+                    <a href="contact.html" class="px-5 py-2 rounded-full border border-[var(--brand-gold)] text-[var(--brand-gold)] hover:bg-[var(--brand-gold)] hover:text-[#a9def5] transition-all font-bold text-sm">상담 신청</a>
                 </div>
 
                 <div class="lg:hidden flex items-center">
@@ -368,7 +324,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
             </div>
         </div>
         
-        <div id="mobile-menu" class="lg:hidden hidden bg-[#1269ce] border-t border-white/10 absolute w-full left-0 top-20 shadow-xl transition-all duration-300 transform -translate-y-4 opacity-0 z-40">
+        <div id="mobile-menu" class="lg:hidden hidden bg-[#a9def5] border-t border-white/10 absolute w-full left-0 top-20 shadow-xl transition-all duration-300 transform -translate-y-4 opacity-0 z-40">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="index.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">홈</a>
                 <a href="about.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">소개</a>
@@ -378,7 +334,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                 <a href="gallery.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">갤러리</a>
                 <a href="history.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">연혁</a>
                 <a href="reviews.html" class="block px-3 py-3 text-base font-medium text-white hover:text-[var(--brand-gold)] hover:bg-white/5 rounded-md transition-colors" onclick="toggleMobileMenu()">후기</a>
-                <a href="contact.html" class="block px-3 py-3 mt-4 text-center text-base font-bold bg-[var(--brand-gold)] text-[#1269ce] hover:bg-[#b5efff] rounded-md transition-colors" onclick="toggleMobileMenu()">상담 신청</a>
+                <a href="contact.html" class="block px-3 py-3 mt-4 text-center text-base font-bold bg-[var(--brand-gold)] text-[#a9def5] hover:bg-[#e5f7ff] rounded-md transition-colors" onclick="toggleMobileMenu()">상담 신청</a>
             </div>
         </div>
     </nav>
@@ -416,11 +372,11 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
             </div>
 
             <div class="lg:w-1/2 bg-white p-6 md:p-10 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden" id="growth-graph">
-                <div class="absolute inset-0 pointer-events-none opacity-5" style="background-image: linear-gradient(#1269ce 1px, transparent 1px), linear-gradient(90deg, #1269ce 1px, transparent 1px); background-size: 20px 20px;"></div>
+                <div class="absolute inset-0 pointer-events-none opacity-5" style="background-image: linear-gradient(#a9def5 1px, transparent 1px), linear-gradient(90deg, #a9def5 1px, transparent 1px); background-size: 20px 20px;"></div>
                 
                 <div class="relative z-10 flex flex-col h-full">
                     <div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-[#1269ce] mb-2">폭발적인 성장</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold text-[#a9def5] mb-2">폭발적인 성장</h3>
                         <p class="text-gray-500 mb-12 text-xs md:text-sm">월 평균 수강생 증가 추이 (단위: 명)</p>
                     </div>
                     <div class="relative w-full h-[250px] sm:h-[300px] md:h-[350px] mt-8 mb-6 border-b-2 border-gray-100 flex items-end">
@@ -432,35 +388,35 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
                             <!-- 2023 -->
                             <div class="h-full w-1/5 relative z-10">
                                 <div class="absolute w-full text-center text-[var(--brand-green)] font-bold text-sm md:text-lg counter-value opacity-0 transition-all duration-1000 transform translate-y-4" data-target="114" style="bottom: 0;">0명</div>
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar shadow-md" style="height: 0%; background: linear-gradient(to top, #1269ce 0%, #1a5c40 100%); width: 60%;" data-height="25%"></div>
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar shadow-md" style="height: 0%; background: linear-gradient(to top, #a9def5 0%, #1a5c40 100%); width: 60%;" data-height="25%"></div>
                                 <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] md:text-sm font-bold text-gray-500 bg-gray-50 px-2 py-1 rounded-lg">2023</div>
                             </div>
                             <!-- 2024 -->
                             <div class="h-full w-1/5 relative z-10">
                                 <div class="absolute w-full text-center text-[var(--brand-green)] font-bold text-sm md:text-lg counter-value opacity-0 transition-all duration-1000 transform translate-y-4" data-target="153" style="bottom: 0;">0명</div>
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-150 shadow-md" style="height: 0%; background: linear-gradient(to top, #1269ce 0%, #1a5c40 100%); width: 60%;" data-height="35%"></div>
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-150 shadow-md" style="height: 0%; background: linear-gradient(to top, #a9def5 0%, #1a5c40 100%); width: 60%;" data-height="35%"></div>
                                 <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] md:text-sm font-bold text-gray-500 bg-gray-50 px-2 py-1 rounded-lg">2024</div>
                             </div>
                             <!-- 2025.8 -->
                             <div class="h-full w-1/5 relative z-10">
                                 <div class="absolute w-full text-center text-[var(--brand-green)] font-bold text-sm md:text-lg counter-value opacity-0 transition-all duration-1000 transform translate-y-4" data-target="198" style="bottom: 0;">0명</div>
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-300 shadow-lg" style="height: 0%; background: linear-gradient(to top, #1269ce 0%, #1a5c40 100%); opacity: 0.9; width: 60%;" data-height="50%"></div>
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-300 shadow-lg" style="height: 0%; background: linear-gradient(to top, #a9def5 0%, #1a5c40 100%); opacity: 0.9; width: 60%;" data-height="50%"></div>
                                 <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] md:text-sm font-bold text-gray-500 bg-gray-50 px-2 py-1 rounded-lg">2025.8</div>
                             </div>
                             <!-- 2025.10 -->
                             <div class="h-full w-1/5 relative z-10">
                                 <div class="absolute w-full text-center text-[var(--brand-green)] font-bold text-base md:text-xl counter-value opacity-0 transition-all duration-1000 transform translate-y-4 whitespace-nowrap" data-target="213" style="bottom: 0;">0명</div>
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-500 shadow-[0_0_15px_rgba(5,59,40,0.3)]" style="height: 0%; background: linear-gradient(to top, #1269ce 0%, #1a5c40 100%); width: 60%;" data-height="60%"></div>
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-500 shadow-[0_0_15px_rgba(5,59,40,0.3)]" style="height: 0%; background: linear-gradient(to top, #a9def5 0%, #1a5c40 100%); width: 60%;" data-height="60%"></div>
                                 <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] md:text-sm font-bold text-gray-600 bg-gray-100 px-2 py-1 rounded-lg whitespace-nowrap">2025.10</div>
                             </div>
                             <!-- 2025.12 -->
                             <div class="h-full w-1/5 relative z-10">
                                 <!-- Highest Label placed above the number element dynamically based on number element height, or directly above it! -->
                                 <div class="absolute w-full text-center mb-6 animate-bounce highest-label transition-all duration-1000" style="bottom: 80%; z-index: 20; opacity: 0;">
-                                    <span class="bg-[var(--brand-gold)] text-[#1269ce] text-[9px] md:text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white whitespace-nowrap">Highest!</span>
+                                    <span class="bg-[var(--brand-gold)] text-[#a9def5] text-[9px] md:text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white whitespace-nowrap">Highest!</span>
                                 </div>
                                 <div class="absolute w-full text-center text-[var(--brand-gold)] font-extrabold text-2xl md:text-5xl counter-value opacity-0 transition-all duration-1000 transform translate-y-4 drop-shadow-md leading-none whitespace-nowrap" data-target="302" id="highest-counter" style="bottom: 0; z-index: 10;">0명</div>
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-700 shadow-[0_0_30px_rgba(207,170,86,0.6)]" style="height: 0%; background: linear-gradient(to top, #64d5ff 0%, #f0d58a 100%); width: 60%;" data-height="75%"></div>
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-lg transition-all duration-1000 cubic-bezier(0.34, 1.56, 0.64, 1) graph-bar delay-700 shadow-[0_0_30px_rgba(207,170,86,0.6)]" style="height: 0%; background: linear-gradient(to top, #c5ebfb 0%, #f0d58a 100%); width: 60%;" data-height="75%"></div>
                                 <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] md:text-sm font-bold text-white bg-[var(--brand-green)] px-2 md:px-3 py-1 rounded-full shadow-md whitespace-nowrap">2025.12</div>
                             </div>
                         </div>
@@ -473,7 +429,7 @@ nav a[href="contact.html"]:hover { color: #123f7d !important; background: #b5eff
 
 
 </main>
-    <footer class="bg-[#0a2852] text-gray-400 py-12 border-t border-white/5">
+    <footer class="bg-[#b0dbed] text-gray-400 py-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div class="flex items-center justify-center md:justify-start gap-2 mb-4 md:mb-0">
