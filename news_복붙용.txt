@@ -159,7 +159,14 @@
             90% { max-width: 0; opacity: 1;} /* 빠르게 지움 */
             100% { max-width: 0; opacity: 0;}
         }
-    </style>
+    
+/* YTH-UP 2D 로고: 헤더는 가로형, 본문은 세로형 */
+.y-logo{width:200px!important;min-width:160px!important}
+.y-logo img{width:200px!important;height:57px!important;object-fit:contain!important;object-position:left center!important}
+.y-logo-float img{object-fit:contain!important}
+@media(max-width:1100px){.y-logo{width:158px!important;min-width:140px!important}.y-logo img{width:158px!important;height:49px!important}}
+@media(max-width:580px){.y-logo{width:145px!important;min-width:135px!important}.y-logo img{width:145px!important;height:46px!important}}
+</style>
 
 <style id="yth-up-soft-sky-2026">
 /* YTH-UP soft sky theme · integrated in each HTML */
@@ -413,7 +420,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
                 
                 <div class="flex justify-center">
                     <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[var(--brand-gold)]/20 flex items-center justify-center p-2 bg-[#a9def5] shadow-[0_0_30px_rgba(207,170,86,0.15)] animate-soft-pulse">
-                        <img src="ythup-logo.png" alt="YTH-UP 로고" class="w-full h-full object-cover rounded-full opacity-90 border border-white/10">
+                        <img src="ythup-logo-full.png" alt="YTH-UP 로고" class="w-full h-full object-cover rounded-full opacity-90 border border-white/10">
                     </div>
                 </div>
             </div>
