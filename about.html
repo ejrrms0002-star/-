@@ -265,40 +265,45 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 @media(max-width:1100px){.y-logo{width:155px!important;min-width:140px!important}.y-logo img{width:155px!important;height:62px!important}}
 @media(max-width:580px){.y-logo{width:140px!important;min-width:125px!important}.y-logo img{width:140px!important;height:58px!important}}
 </style>
-<style>
-/* YTH-UP 소개 페이지: 중앙 로고 + 은은한 금빛 프레임 */
-.yth-glow-frame{
-  position:relative; isolation:isolate; display:grid; place-items:center;
-  box-sizing:border-box; width:158px; height:158px; margin:0 auto 32px;
-  border:2px solid #f1e5c9; background:#fff;
-  box-shadow:0 0 13px rgba(227,194,121,.12), inset 0 0 0 1px #fff9ef;
-  animation:yth-frame-glow 3.4s ease-in-out infinite;
+<style id="ythup-about-logo-centered-final">
+/* 소개 로고: 테두리·반짝임 제거, 실제 로고 기준 완전 중앙 배치 */
+.yth-glow-frame {
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 auto 32px !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  transform:none !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  animation:none !important;
+  isolation:auto !important;
 }
-.yth-glow-logo{
-  display:block; position:relative; z-index:1; width:108px; height:108px;
-  max-width:none; margin:0; padding:0; object-fit:contain; object-position:center;
-  transform:none !important; animation:none !important;
+.yth-glow-frame .yth-glow-logo {
+  display:block !important;
+  width:min(260px,75vw) !important;
+  height:auto !important;
+  max-width:100% !important;
+  position:static !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:none !important;
+  animation:none !important;
+  filter:none !important;
 }
-.yth-spark{
-  position:absolute; z-index:2; width:7px; height:7px; pointer-events:none;
-  opacity:0; background:#ffe7ad; border-radius:50%;
-  box-shadow:0 0 6px #ffe7adc4; animation:yth-spark-twinkle 3.6s infinite;
-}
-.yth-spark::before,.yth-spark::after{content:"";position:absolute;background:#f1d59b;left:50%;top:50%;transform:translate(-50%,-50%)}
-.yth-spark::before{width:1px;height:14px}.yth-spark::after{width:14px;height:1px}
-.yth-spark-a{top:4px;right:4px;animation-delay:0s}
-.yth-spark-b{bottom:8px;left:5px;animation-delay:1.2s}
-.yth-spark-c{top:50%;left:-4px;animation-delay:2.4s}
-@keyframes yth-frame-glow{
-  0%,100%{box-shadow:0 0 11px rgba(227,194,121,.10), inset 0 0 0 1px #fff9ef;border-color:#f1e5c9}
-  50%{box-shadow:0 0 22px rgba(227,194,121,.27),0 0 34px rgba(227,194,121,.10),inset 0 0 0 1px #fff7e7;border-color:#e7c98c}
-}
-@keyframes yth-spark-twinkle{
-  0%,12%,60%,100%{opacity:0;transform:scale(.5)}
-  24%,35%{opacity:.9;transform:scale(1)}
-}
-@media(max-width:640px){.yth-glow-frame{width:138px;height:138px;margin-bottom:26px}.yth-glow-logo{width:96px;height:96px}}
-@media(prefers-reduced-motion:reduce){.yth-glow-frame,.yth-spark{animation:none !important}}
+.yth-glow-frame .yth-spark {display:none !important;}
+@media(max-width:640px) {.yth-glow-frame .yth-glow-logo {width:min(215px,75vw) !important;}}
 </style>
 </head>
 <body class="antialiased overflow-x-hidden">
@@ -388,10 +393,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-12">
                 <div class="yth-glow-frame" aria-label="YTH-UP 로고">
-                    <span class="yth-spark yth-spark-a" aria-hidden="true"></span>
-                    <span class="yth-spark yth-spark-b" aria-hidden="true"></span>
-                    <span class="yth-spark yth-spark-c" aria-hidden="true"></span>
-                    <img src="ythup-brand-final-20261009.png?v=glow-final-1" alt="YTH-UP" class="yth-glow-logo">
+                    <img src="ythup-about-logo-centered-20261010.png" alt="YTH-UP" class="yth-glow-logo">
                 </div>
 
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif animate-shine-text">청년의 가능성을 그리는 YTH-UP</h2>
